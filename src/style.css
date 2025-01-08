@@ -1,15 +1,8 @@
 :root {
-  --primary-color: #4c44c5;
+  --primary-color: #8f298a;
   --secondary-color: #eeeeff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --font-family: "Mona Sans", serif;
-}
-
-body {
-  margin-top: 100px;
-  padding: 15px;
-  font-family: var(--font-family);
-  background-color: var(--secondary-color);
 }
 
 body {
@@ -41,7 +34,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -52,7 +45,7 @@ p {
 }
 
 .navigation-links a {
-  margin: 20px;
+  margin: 18px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -80,21 +73,13 @@ p {
   display: block;
 }
 
-.about-paragraphs {
-  line-height: 1.6;
-  max-width: 800px;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
 .email-link {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
   text-decoration: none;
+  line-height: 1.6;
+  font-size: 28px;
 }
 
 .email-link:hover {
@@ -129,5 +114,5 @@ p {
 }
 
 .about-images {
-  max-width: 800px;
+  justify-content: center;
 }
