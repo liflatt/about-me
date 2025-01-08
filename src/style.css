@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #83147b;
+  --secondary-color: #bbb0df;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --background: #f6eaf7;
+}
+.bg-custom {
+  background-color: rgba(221, 218, 218, 1);
+}
+@media (max-width: 576px) {
+  .about-image {
+    display: block;
+  }
+}
+body {
+  margin-top: 100px;
+  font-family: "Urbanist", serif;
+  font-optical-sizing: auto;
+  background: var(--background);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+#contact {
+  font-size: 28px;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
