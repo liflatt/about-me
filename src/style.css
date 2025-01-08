@@ -42,8 +42,7 @@ h3 {
 
 p {
   font-size: 16px;
-  line-height: 1.5;
-  display: flex;
+  line-height: 1.6;
 }
 
 .navigation-links {
@@ -54,6 +53,9 @@ p {
 
 .navigation-links a {
   margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
 }
 
 .contact-link {
@@ -69,6 +71,7 @@ p {
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  justify-content: center;
 }
 
 .homepage-link {
@@ -78,7 +81,12 @@ p {
 }
 
 .about-paragraphs {
-  margin: 30px 0;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.about-paragraphs p {
+  margin: 10px;
 }
 
 .email-link {
@@ -120,6 +128,6 @@ p {
   color: black;
 }
 
-img {
-  border: white;
+.about-images {
+  max-width: 800px;
 }
