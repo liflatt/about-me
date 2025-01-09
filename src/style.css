@@ -116,3 +116,9 @@ p {
 .about-images {
   justify-content: center;
 }
+
+@media (max-width: 576px) {
+  .projects {
+    text-align: center;
+  }
+}
