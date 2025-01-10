@@ -106,7 +106,7 @@ p {
 }
 
 .bg-custom {
-  background-color: rgba(224, 220, 220, 0.8);
+  background-color: rgba(224, 220, 220, 1);
 }
 
 .bg-link-custom {
@@ -121,4 +121,17 @@ p {
   .projects {
     text-align: center;
   }
+  .about-paragraphs {
+    display: block;
+  }
+}
+
+.about-paragraphs {
+  justify-content: space-evenly;
+}
+
+.project-header {
+  font-size: 36px;
+  justify-content: center;
+  text-align: center;
 }
