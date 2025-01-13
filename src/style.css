@@ -5,8 +5,12 @@
   --font-family: "Mona Sans", serif;
 }
 
+bg-top-section {
+  background-color: rgb(187, 42, 187);
+}
+
 body {
-  margin-top: 100px;
+  margin-top: 75px;
   padding: 15px;
   font-family: var(--font-family);
   font-optical-sizing: auto;
@@ -15,12 +19,13 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 72px;
   font-weight: bold;
 }
 
@@ -40,14 +45,16 @@ p {
 
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   justify-content: center;
 }
 
 .navigation-links a {
-  margin: 18px;
+  font-size: 18px;
+  margin: 15px;
   border-radius: 4px;
   padding: 20px 15px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -58,7 +65,7 @@ p {
 }
 
 #contact {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .about-link {
@@ -78,6 +85,7 @@ p {
   justify-content: center;
   color: var(--primary-color);
   text-decoration: none;
+  text-align: center;
   line-height: 1.6;
   font-size: 28px;
 }
@@ -106,7 +114,7 @@ p {
 }
 
 .bg-custom {
-  background-color: rgba(224, 220, 220, 1);
+  background-color: rgb(230, 228, 230);
 }
 
 .bg-link-custom {
@@ -130,8 +138,14 @@ p {
   justify-content: space-evenly;
 }
 
-.project-header {
-  font-size: 36px;
-  justify-content: center;
-  text-align: center;
+#projects-heading {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#projects-subheading {
+  font-size: 28px;
+}
+.projects {
+  margin: 0 auto;
 }
