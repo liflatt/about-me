@@ -4,9 +4,8 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --font-family: "Mona Sans", serif;
 }
-
-bg-top-section {
-  background-color: rgb(187, 42, 187);
+.bottom-section {
+  background: rgb(230, 228, 230);
 }
 
 body {
@@ -148,4 +147,5 @@ p {
 }
 .projects {
   margin: 0 auto;
+  justify-content: center;
 }
