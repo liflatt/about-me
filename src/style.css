@@ -3,8 +3,10 @@
   --accent-color: #7359bb;
   --accent-color-two: #5a4691;
   --background-color: #eeeeff;
+  --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   --header-footer-background: rgb(212, 204, 243);
   --default-font-family: "Mona Sans", serif;
+  --header-font-family: "Poppins", serif;
 }
 
 body {
@@ -15,22 +17,27 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--default-font-family);
+  font-family: var(--header-font-family);
   font-weight: bold;
 }
 
 h1 {
-  font-size: 76px;
+  font-size: 84px;
 }
 
 h2 {
   font-size: 44px;
 }
 h3 {
-  font-size: 32px;
+  font-size: 36px;
 }
 h4 {
-  font-size: 24px;
+  font-size: 28px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -41,15 +48,15 @@ h4 {
 }
 
 .hero p {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
+  line-height: 24px;
 }
 
 .bg-custom {
   background-color: var(--background-color);
 }
-.primary-links,
-.project-links {
+.primary-links {
   font-size: 16px;
   border-radius: 4px;
   padding: 15px 15px;
@@ -60,18 +67,7 @@ h4 {
   color: white;
 }
 
-.navigation-links a {
-  font-size: 18px;
-  margin: 10px;
-  border-radius: 4px;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  justify-content: space-between;
-}
-
-.primary-links:hover,
-.project-links:hover {
+.primary-links:hover {
   border-radius: 4px;
   padding: 15px 15px;
   text-decoration: none;
@@ -92,6 +88,16 @@ h4 {
   font-weight: bold;
 }
 
+.navigation-links a {
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
 .nav-link:hover {
   color: var(--primary-color);
   font-weight: 700;
@@ -101,7 +107,7 @@ footer {
   background: var(--header-footer-background);
   text-align: center;
   justify-content: center;
-  padding: 30px 0px;
+  padding: 15px 0px;
   margin: 0 auto;
 }
 
@@ -114,16 +120,6 @@ footer .email-link {
 footer .email-link:hover {
   transition: all 80ms ease-in-out;
   text-decoration: underline;
-}
-.content h3 {
-  font-size: 24x;
-  line-height: 1.6;
-  font-family: var(--default-font-family);
-}
-
-.content p {
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .social-links a {
@@ -147,35 +143,33 @@ footer .email-link:hover {
   .hero {
     padding: 80px 20px;
   }
+
+  .hero p {
+    font-size: 24px;
+  }
+
   .projects {
     text-align: center;
-  }
-  .about-section {
-    text-align: center;
-    display: block;
-  }
-  .content {
-    text-align: center;
-    padding: 0;
   }
 
   h1 {
     font-size: 44px;
   }
+
   h2 {
     font-size: 32px;
   }
+
   h3 {
     font-size: 24px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
-  p {
-    font-size: 16px;
-  }
+
+  p,
   a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
