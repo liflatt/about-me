@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Discover Lindsey Flatt, a Systems Analyst and Front-End Developer"
+      content="Lindsey Flatt is a Systems Analyst and Front-End Developer"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/afbde485f0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,13 +29,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>About Lindsey Flatt</title>
+    <title>Lindsey Flatt Portfolio Homepage</title>
   </head>
-
-  <body class="background">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-custom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Lindsey Flatt</a>
+  <body>
+    <div class="container content-container align-items-start">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-custom">
         <button
           class="navbar-toggler"
           type="button"
@@ -41,159 +48,162 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link active bg-link-custom"
-                aria-current="page"
-                href="/"
-                title="Homepage"
-              >
-                Projects
-              </a>
+              <a class="nav-link" href="/index.html" title="Home">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link bg-link-custom"
-                href="/about.html"
-                title="About Lindsey Flatt"
-                >About me</a
+              <a class="nav-link" href="/index.html#projects" title="Projects"
+                >Projects</a
               >
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
               <a
-                class="nav-link bg-link-custom"
+                class="nav-link"
                 href="/about.html#contact"
                 title="Contact Lindsey Flatt"
+                >Contact</a
               >
-                Contact me
-              </a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <div
-      class="container top-section border-bottom border-2 border-secondary-subtle p-3"
-    >
-      <div class="container text-center mt-4 mb-4">
-        <h2 class="mt-4 mb-2 text-wrap">👋 Hi I am</h2>
-        <h1 class="mt-2 mb-3 text-wrap">Lindsey Flatt</h1>
-        <h3 class="mt-2 mb-4 text-wrap">
-          Business Systems Analyst | Front-End Developer | Fort Worth, TX
-        </h3>
-      </div>
-      <div class="navigation-links mb-4">
-        <a href="/about.html#contact" class="primary-link">Contact me</a>
-        <a href="/about.html" class="secondary-link about-link">About me</a>
-      </div>
+      </nav>
     </div>
-
-    <div class="container project-header text-center mt-4">
-      <div class="text-wrap" id="projects-heading">Projects</div>
-      <div class="text-wrap" id="projects-subheading">
-        Check out some of my recent coding projects!
-      </div>
+    <div class="hero text-center">
+      <p>👋 Hi I am</p>
+      <h1>Lindsey Flatt</h1>
+      <h4 class="mb-5">
+        Business Systems Analyst | Frontend Developer | Fort Worth, TX
+      </h4>
+      <a href="/about.html" class="primary-links">About Me</a>
     </div>
-    <div class="container projects">
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h2 class="mb-3">Weather App</h2>
-          <p class="project-paragraph">
-            I developed this weather app as part of the SheCodes Coding
-            Bootcamp. It enables users to search for a city and access real-time
-            weather data along with a 5-day forecast through API integration.
-            Built using HTML, CSS, and JavaScript, the app also features a
-            toggle to switch between Celsius and Fahrenheit for temperature
-            display.
-          </p>
-          <div class="mb-5 mt-5">
-            <a
-              href="https://lf-weather.netlify.app"
-              class="primary-link"
-              title="Weather App"
-            >
-              Weather App
-            </a>
+      <div class="container content-container projects" id="projects">
+        <h2
+          class="text-center mt-5 mb-5"
+        >
+          Featured Projects
+        </h2>
+        <div class="row mb-5 mt-5">
+          <div class="col-md-6">
+            <h3 class="mb-3">Weather App</h3>
+            <p class="project-paragraph">
+              I developed this weather app as part of the SheCodes Coding
+              Bootcamp. It enables users to search for a city and access
+              real-time weather data along with a 5-day forecast through API
+              integration. Built using HTML, CSS, and JavaScript, the app also
+              features a toggle to switch between Celsius and Fahrenheit for
+              temperature display.
+            </p>
+            <div class="mt-5">
+              <a
+                href="https://lf-weather.netlify.app"
+                class="project-links mt-3"
+                target="_blank"
+                title="Weather App"
+              >
+                Weather App
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="/images/weather.png"
+              class="img-fluid rounded shadow"
+              alt="Weather app screenshot"
+            />
           </div>
         </div>
-        <div class="col-md-6">
-          <img
-            src="/images/weather.png"
-            class="img-fluid rounded shadow d-none d-sm-block"
-            alt="Weather app screenshot"
-          />
-        </div>
-      </div>
-      <div class="row mt-5 mb-5">
-        <div class="col-md-6">
-          <h2 class="mb-3">Pilates Webpage</h2>
-          <p class="project-paragraph">
-            This webpage, created as part of the SheCodes Coding Bootcamp,
-            highlights one of my favorite hobbies: Pilates. Built with HTML,
-            CSS, and JavaScript, it features a 'faux' sign-up button for Pilates
-            classes, a visually appealing gradient background, and a dark mode
-            toggle that allows users to switch between light and dark modes.
-            This project demonstrates my ability to design interactive and
-            user-friendly web experiences.
-          </p>
-          <div class="mb-5 mt-5">
-            <a
-              href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/002/477/044/original/basics-add-on-project.html?1732158524"
-              class="primary-link"
-              title="Pilates Webpage"
-            >
-              Pilates Webpage
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img
-            src="/images/pilates.png"
-            class="img-fluid rounded shadow d-none d-sm-block"
-            alt="Pilates webpage screenshot"
-          />
-        </div>
-      </div>
 
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h2 class="mb-3">World Clock</h2>
-          <p class="project-paragraph">
-            I developed this World Clock app as part of SheCodes Coding
-            Bootcamp. It shows the current time for the user's location and
-            multiple other cities, with a dropdown menu to easily select
-            additional locations. Built with HTML, CSS, and JavaScript, the app
-            uses Moment.js to accurately retrieve and format times in a clean
-            and user-friendly interface.
-          </p>
-          <div class="mb-5 mt-5">
-            <a
-              href="https://world-clock-by-lindsey-flatt.netlify.app/"
-              class="primary-link"
-              title="World Clock App"
-            >
-              World Clock
-            </a>
+        <div class="row mb-5">
+          <div class="col-md-6 mb-4">
+            <h3 class="mb-3">Pilates Webpage</h3>
+            <p class="project-paragraph">
+              This webpage, created as part of the SheCodes Coding Bootcamp,
+              highlights one of my favorite hobbies: Pilates. Built with HTML,
+              CSS, and JavaScript, it features a 'faux' sign-up button for
+              Pilates classes, a gradient background, and a dark mode toggle.
+            </p>
+            <div class="mt-5">
+              <a
+                href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/002/477/044/original/basics-add-on-project.html?1732158524"
+                class="project-links mt-3"
+                target="_blank"
+                title="Pilates Webpage"
+              >
+                Pilates Webpage
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="/images/pilates.png"
+              class="img-fluid rounded shadow mb-3"
+              alt="Pilates webpage screenshot"
+            />
           </div>
         </div>
-        <div class="col-md-6">
-          <img
-            src="/images/worldclock.png"
-            class="img-fluid rounded shadow d-none d-sm-block"
-            alt="World clock app screenshot"
-          />
+        <div class="row mb-5">
+          <div class="col-md-6 mb-4">
+            <h3 class="mb-3">World Clock</h3>
+            <p class="project-paragraph">
+              I developed this World Clock app as part of SheCodes Coding
+              Bootcamp. It shows the current time for the user's location and
+              multiple other cities, with a dropdown menu to easily select
+              additional locations. Built with HTML, CSS, and JavaScript, the
+              app uses Moment.js to accurately retrieve and format times in a
+              clean and user-friendly interface.
+            </p>
+            <div class="mt-5">
+              <a
+                href="https://world-clock-by-lindsey-flatt.netlify.app/"
+                class="project-links"
+                target="_blank"
+                title="World Clock App"
+              >
+                World Clock App
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="/images/worldclock.png"
+              class="img-fluid rounded shadow"
+              alt="World clock app screenshot"
+            />
+          </div>
         </div>
       </div>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/afbde485f0.js"
-      crossorigin="anonymous"
-    ></script>
+    <footer>
+      <div class="container">
+        <h3 class="mt-5">Contact me</h3>
+        <div>
+          <a
+            href="mailto:lflatt1221@gmail.com"
+            class="email-link row"
+            title="Email Lindsey"
+          >
+            lflatt1221@gmail.com</a
+          >
+        </div>
+        <div
+          class="social-links d-flex justify-content-center text-center mt-4 mb-5"
+        >
+          <a
+            href="https://www.github.com/liflatt"
+            target="_blank"
+            title="Github Profile"
+            ><i class="fa-brands fa-github" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/lindsey-nicole-flatt/"
+            target="_blank"
+            title="LinkedIn Profile"
+            ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
