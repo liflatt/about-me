@@ -180,6 +180,10 @@ footer .email-link:hover {
     text-align: center;
   }
 
+  .nav-container {
+    padding: 15px 15px;
+  }
+
   h1 {
     font-size: 44px;
   }
