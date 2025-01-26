@@ -73,6 +73,14 @@ p {
 .projects {
   padding: 15px 15px;
 }
+.about-section {
+  padding: 15px 15px;
+}
+
+.about-paragraphs {
+  display: block;
+  text-align: left;
+}
 
 .bg-custom {
   background-color: var(--background-color);
@@ -178,6 +186,17 @@ footer .email-link:hover {
 
   .projects {
     text-align: center;
+  }
+
+  .about-section {
+    display: block;
+    text-align: center;
+  }
+
+  .about-paragraphs {
+    display: block;
+    text-align: center;
+    justify-content: center;
   }
 
   .nav-container {
